@@ -3,23 +3,23 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Jack LeVasseuer
-// Created on: April 19, 2024 
-// This is the Splash Scene
+// Created on: April 17, 2024
+// This is the Title Scene
 
 /**
- * This cless is the Splash Scene.
+ * This class is the Title Scene.
  */
-class SplashScene extends Phaser.Scene {
-  /** 
-   * This method is the construtor.
-   */
-  constructor() {
-    super({ key: "splashScene" })
-  }
+ class TitleScene extends Phaser.Scene {
+   /** 
+    * This method is the construtor
+    */
+   constructor() {
+     super({ key: "titleScene" })
+   }
 
   /**
    * Can be defined on your own Scenes.
-   * This method is called by the Scene Manger when the scene starts,
+   * This method is called by the Scene Manager when the scene starts,
    *   before preload() and creat().
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
@@ -29,24 +29,25 @@ class SplashScene extends Phaser.Scene {
 
   /**
    * Can be defined on your own Scenes.
-   * Use it to load assest
+   * Use it to load assets.
    */
   preload() {
-    console.log("Splash Scene")
+    console.log("Title Scene")
   }
 
-  /** 
-   * Can be defeind on your own Scenes.
-   * Use it to creat your game objects. 
+  /**
+   * Can be defined on your own Scenes.
+   * Use it to creat your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
     // pass
   }
+
   /**
    * Should be overridden by your own Scenes.
-   * This method is called pnce per game step while the scene is running.
-   *  @param {number} time - The current time.
+   * This method is called once per game step while the scene is running
+   *  @param {number} time - The current time. 
    *  @param {number} delta - The delta time in ms since the last frame. 
    */
   update(time, delta) {
@@ -54,4 +55,4 @@ class SplashScene extends Phaser.Scene {
   }
 }
 
-export default SplashScene
+export default TitleScene
